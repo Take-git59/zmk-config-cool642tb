@@ -79,7 +79,7 @@
         SYMBOL {
             bindings = <
 &kp EXCL              &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                             &kp CARET  &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&mt LEFT_CONTROL TAB  &kp AT_SIGN  &kp HOME  &kp GRAVE   &kp SQT            &to 0             &kp INT_MUHENKAN   &kp EQUAL  &kp MINUS       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&mt LEFT_CONTROL TAB  &kp AT_SIGN  &kp HOME  &kp GRAVE   &kp SQT            &kp K_MUTE        &kp INT_MUHENKAN   &kp EQUAL  &kp MINUS       &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &kp PLUS              &kp MINUS    &kp END   &kp TILDE   &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS   &kp UNDERSCORE  &kp PIPE       &kp LEFT_BRACE        &kp QUESTION
 &none                 &none        &none     &none       &kp DELETE         &kp BACKSPACE     &kp MINUS          &none                                                           &kp LEFT_SHIFT
             >;
@@ -89,10 +89,10 @@
 
         ARROWF {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                         &kp NUMBER_6         &kp N7              &kp N8         &kp N9             &kp N0
-&kp TAB       &kp F2        &kp F3        &kp F4        &kp F5   &kp F11     &kp INT_KATAKANAHIRAGANA  &kp LEFT             &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT          &kp PAGE_UP
-&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp F12     &kp RIGHT_BRACE           &kp LC(PAGE_UP)      &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &kp LC(PAGE_DOWN)  &kp PAGE_DOWN
-&kp RSHIFT    &kp TAB       &kp LCTRL     &kp RGUI      &none    &kp DELETE  &kp TAB                   &mt LEFT_ALT ESCAPE                                                        &kp DELETE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                      &kp NUMBER_6         &kp N7              &kp N8         &kp N9             &kp N0
+&kp TAB       &kp F2        &kp F3        &kp F4        &kp F5            &kp F11         &kp INT_KATAKANAHIRAGANA  &kp LEFT             &kp DOWN_ARROW      &kp UP_ARROW   &kp RIGHT          &kp PAGE_UP
+&kp F6        &kp F7        &kp F8        &kp F9        &mt LEFT_ALT F10  &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(PAGE_UP)      &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &kp LC(PAGE_DOWN)  &kp PAGE_DOWN
+&kp F11       &kp F12       &kp LCTRL     &kp RGUI      &none             &kp DELETE      &kp TAB                   &mt LEFT_ALT ESCAPE                                                        &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -103,7 +103,7 @@
 &kp Q       &kp W       &kp E         &kp R         &kp T                               &kp Y              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp P
 &kp A       &kp S       &kp D         &kp F         &kp G        &kp N1  &kp N2         &kp TAB            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER
 &kp Z       &kp X       &kp C         &kp V         &kp B        &kp N3  &kp N4         &kp N              &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp SLASH
-&bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &bt BT_SEL 1  &lt 1 SPACE  &kp N5  &kp BACKSPACE  &lt 2 KP_NUMBER_0                                                     &kp BSPC
+&bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &bt BT_SEL 1  &lt 1 SPACE  &none   &kp BACKSPACE  &lt 2 KP_NUMBER_0                                                     &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -111,10 +111,10 @@
 
         MOUSE {
             bindings = <
-&kp Q       &kp W    &kp E             &kp R         &kp T                            &kp Y          &kp U     &kp LC(X)  &kp LC(O)  &kp LC(V)
-&kp A       &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &kp H          &mkp MB1  &mkp MB3   &mkp MB2   &kp ENTER
-&kp Z       &kp X    &kp C             &kp V         &kp B     &none     &kp N4       &kp N          &mkp MB4  &mo 2      &mkp MB5   &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 2 SPACE  &kp BACKSPACE                                  &kp LEFT_SHIFT
+&kp Q             &kp W    &kp E             &kp R         &kp T                            &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LC(X)  &kp LC(O)  &kp LC(V)
+&kp LEFT_CONTROL  &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &msc SCRL_UP    &mkp MB1         &mkp MB3   &mkp MB2   &kp ENTER
+&kp LEFT_SHIFT    &kp X    &kp C             &kp V         &mkp MB2  &mkp MB3  &kp N4       &msc SCRL_DOWN  &mkp MB4         &mo 2      &mkp MB5   &kp SLASH
+&kp ESCAPE        &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mo 2     &mkp MB1  &lt 2 SPACE  &kp BACKSPACE                                          &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
