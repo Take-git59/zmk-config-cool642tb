@@ -196,7 +196,7 @@
         MOUSE {
             bindings = <
 &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &kp Y        &kp U     &kp I      &kp O     &kp P
-&bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &kp N1  &kp N2  &kp H        &mkp MB1  &mkp MB3   &mkp MB2  &kp ENTER
+&bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &kp N1  &none   &kp H        &mkp MB1  &mkp MB3   &mkp MB2  &kp ENTER
 &bt BT_CLR      &none          &none          &kp V          &kp B          &kp N3  &kp N4  &kp N        &mkp MB4  &kp COMMA  &mkp MB5  &gresc
 &bt BT_CLR_ALL  &none          &none          &kp LALT       &lt 3 SPACE    &kp N5  &kp N6  &lt 4 SPACE                                 &kp BSPC
             >;
